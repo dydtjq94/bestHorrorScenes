@@ -1,0 +1,94 @@
+@import "reset.css";
+@import "_variables";
+
+* {
+  box-sizing: border-box;
+}
+
+.left__title {
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0eff0;
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  color: $red;
+  .main__title {
+    font-size: 70px;
+    font-weight: 500;
+    width: 50%;
+    padding-bottom: 40px;
+  }
+  .sub__title {
+    font-size: 25px;
+    font-weight: 400;
+    width: 70%;
+    padding-bottom: 40px;
+    text-align: justify;
+  }
+  .last__title {
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+    padding-bottom: 40px;
+    text-align: justify;
+    line-height: 20px;
+  }
+  .linked {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    .left__title__link {
+      color: #5d5d5d;
+      opacity: 0.5;
+      font-size: 15px;
+      margin-right: 10px;
+      border: none;
+      border-bottom: 2px solid #5d5d5d;
+      margin-bottom: 10px;
+      margin-right: 20px;
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+main {
+  background-color: $red;
+  width: 60%;
+  margin-left: 40%;
+  .main__content {
+    padding: 100px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2) 25%,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      )
+      $red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main__content__title {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 15px;
+      .title {
+        font-size: 20px;
+      }
+      .director {
+        font-size: 15px;
+      }
+    }
+  }
+  img {
+    width: 100%;
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.4);
+  }
+}
